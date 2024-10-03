@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.komalankitwedding.in"),
   openGraph: {
     title: "Komal and Ankit's Wedding",
-    description: `Komal and Ankit are getting wedding on ${WEDDING_DATE}`,
+    description: `Komal and Ankit are getting married on ${WEDDING_DATE}`,
     images: "/og.webp",
   },
   twitter: {
     title: "Komal and Ankit's Wedding",
-    description: `Komal and Ankit are getting wedding on ${WEDDING_DATE}`,
+    description: `Komal and Ankit are getting married on ${WEDDING_DATE}`,
     images: "/og.webp",
   },
 };

@@ -4,7 +4,7 @@
 import FlowerBackground from "@/components/FlowerBackground";
 import { useState } from "react";
 
-import "./zoom.css";
+import "./details.css";
 
 function Details() {
   const [zoomedImage, setZoomedImage] = useState("");
@@ -19,19 +19,13 @@ function Details() {
     <FlowerBackground>
       <div className="h-full w-full flex items-center justify-center overflow-auto">
         <img
-          className="h-full object-contain"
+          className="preview-image h-full object-contain"
           src="/details.webp"
           onClick={() => openZoomedImage("/details.webp")}
         />
       </div>
       {zoomedImage && (
         <div className="zoomed-image-container" onClick={closeZoomedImage}>
-          {/* <Image
-            src={zoomedImage}
-            alt="zoomed-image"
-            layout="fill"
-            objectFit="contain"
-          /> */}
           <img className="h-auto max-w-auto" src={zoomedImage} />
         </div>
       )}
