@@ -12,6 +12,7 @@ import {
   WEDDING_DATE,
   WEDDING_DATE_TIME,
   WEDDING_VENUE,
+  WEDDING_VENUE_MAP,
 } from "@/constants/app";
 import "./landing.css";
 
@@ -70,15 +71,15 @@ function Invite() {
               "text-xl md:text-4xl tracking-[28px] text-center"
             )}
           >
-            <div className="flex flex-col md:flex-row gap-1 md:gap-10 items-center justify-center">
-              <div className="pl-2">Komal</div>
+            <div className="flex flex-col md:flex-row gap-1 md:gap-10 items-center justify-center pl-6">
+              <div>Komal</div>
               <div>&</div>
-              <div>Ankit</div>
+              <div className="tracking-[30.5px]">Ankit</div>
             </div>
           </div>
           <p
             className={classNames(
-              "mt-8 pr-6 md:pr-0 text-xl md:text-2xl font-bold rounded w-fit lowercase",
+              "mt-8 pr-2 md:pr-0 text-xl md:text-2xl font-bold rounded w-fit lowercase",
               helostar.className
             )}
           >
@@ -95,6 +96,11 @@ function Invite() {
               <div className="font-semibold uppercase underline underline-offset-8 text-[12px]">
                 {WEDDING_DATE}
               </div>
+            </a>
+            <a
+              target="_blank"
+              href={datePassed ? undefined : WEDDING_VENUE_MAP}
+            >
               <div className="font-semibold text-[8px] uppercase">
                 {WEDDING_VENUE}
               </div>

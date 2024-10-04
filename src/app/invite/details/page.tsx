@@ -25,8 +25,11 @@ function Details() {
         />
       </div>
       {zoomedImage && (
-        <div className="zoomed-image-container" onClick={closeZoomedImage}>
-          <img className="h-auto max-w-auto" src={zoomedImage} />
+        <div
+          className="zoomed-image-container pl-[200vw] pr-[200vw] md:p-0"
+          onClick={closeZoomedImage}
+        >
+          <img className="h-auto max-w-auto " src={zoomedImage} />
         </div>
       )}
     </FlowerBackground>
