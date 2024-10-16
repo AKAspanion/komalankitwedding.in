@@ -68,7 +68,7 @@ function Bride() {
         autoPlay
         loop
         muted={muted}
-        className="absolute -translate-y-[12px] z-10 w-auto min-w-full"
+        className="absolute -translate-y-[12px] z-10 w-auto min-w-full border-t border-b border-t-[#D6AC6A] border-b-[#AA6E35]"
       ></video>
       <div className="text-white absolute z-12 bottom-12 text-3xl opacity-50">
         {!muted ? <Volume2 /> : <VolumeOff />}
