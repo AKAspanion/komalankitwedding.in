@@ -13,7 +13,7 @@ function Bride() {
     const body2 = document.getElementById("star-shine-2");
     function renderStarShine(body: HTMLElement) {
       const template = document.createElement("div");
-      const stars = 150,
+      const stars = 160,
         sparkle = 20;
 
       let size = "small";
@@ -57,7 +57,7 @@ function Bride() {
       className="relative flex items-center justify-center h-[100svh] overflow-hidden"
       onClick={() => setMuted((s) => !s)}
     >
-      <div className="absolute w-full bg-[#4E2862] top-0 h-[50svh]">
+      <div className="absolute w-full bg-[#4E2760] top-0 h-[50svh]">
         <div id="star-shine-1" className="h-full w-full"></div>
       </div>
       <div className="absolute w-full bg-[#06011C] bottom-0 h-[50svh]">
@@ -70,7 +70,7 @@ function Bride() {
         muted={muted}
         className="absolute -translate-y-[12px] z-10 w-auto min-w-full"
       ></video>
-      <div className="text-white absolute z-12 bottom-12 text-3xl opacity-20">
+      <div className="text-white absolute z-12 bottom-12 text-3xl opacity-50">
         {!muted ? <Volume2 /> : <VolumeOff />}
       </div>
     </div>

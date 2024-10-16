@@ -11,11 +11,11 @@
   color: tansparent;
   -moz-opacity: 0;
   opacity: 0;
-  animation: starshine 10s linear 0s infinite normal;
-  -webkit-animation: starshine 10s linear 0s infinite normal;
-  -moz-animation: starshine 12s linear 0s infinite normal;
-  -ms-animation: starshine 12s linear 0s infinite normal;
-  -o-animation: starshine 12s linear 0s infinite normal;
+  animation: starshine 8s linear 0s infinite normal;
+  -webkit-animation: starshine 8s linear 0s infinite normal;
+  -moz-animation: starshine 10s linear 0s infinite normal;
+  -ms-animation: starshine 10s linear 0s infinite normal;
+  -o-animation: starshine 10s linear 0s infinite normal;
 }
 
 .small,
