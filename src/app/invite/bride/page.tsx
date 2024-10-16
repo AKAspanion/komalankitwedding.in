@@ -6,11 +6,11 @@ function Bride() {
   const [muted, setMuted] = useState(true);
   return (
     <div
-      className="relative flex items-center justify-center h-screen overflow-hidden"
+      className="relative flex items-center justify-center h-[100svh] overflow-hidden"
       onClick={() => setMuted((s) => !s)}
     >
-      <div className="absolute w-full bg-[#4F2862] top-0 h-[50svh]" />
-      <div className="absolute w-full bg-[#080224] bottom-0 h-[50svh]" />
+      <div className="absolute w-full bg-[#4E2862] top-0 h-[50svh]" />
+      <div className="absolute w-full bg-[#06011C] bottom-0 h-[50svh]" />
       <video
         src="/invite.mp4"
         autoPlay
