@@ -23,8 +23,8 @@ function Bride() {
         clone.setAttribute("id", "");
         clone.style.top = Math.random() * 100 + "%";
 
-        (clone.style.left = Math.random() * 100 + "%"),
-          (clone.style.animationDelay = Math.random() * sparkle + "s");
+        clone.style.left = Math.random() * 100 + "%";
+        clone.style.animationDelay = Math.random() * sparkle + "s";
 
         clone.classList.add(size);
         clone.classList.add("shine");
