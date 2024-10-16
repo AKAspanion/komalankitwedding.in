@@ -16,8 +16,8 @@ function Bride() {
       const stars = 150,
         sparkle = 20;
 
-      var size = "small";
-      var createStar = function () {
+      let size = "small";
+      const createStar = function () {
         const clone = template.cloneNode(true) as HTMLElement;
 
         clone.setAttribute("id", "");
@@ -32,7 +32,7 @@ function Bride() {
         body.appendChild(clone);
       };
 
-      for (var i = 0; i < stars; i++) {
+      for (let i = 0; i < stars; i++) {
         if (i % 2 === 0) {
           size = "small";
         } else if (i % 3 === 0) {
