@@ -7,7 +7,7 @@ interface FlowerBackgroundProps {
 const FlowerBackground: FC<FlowerBackgroundProps> = ({ children }) => {
   return (
     <div className="relative w-screen h-[100svh] bg-white text-black text-xs">
-      <div className="absolute py-[8%] px-[8%] w-screen h-screen overflow-auto">
+      <div className="absolute py-[8%] px-[8%] w-screen h-[100svh] overflow-auto">
         {children}
       </div>
       <div className="grid grid-cols-2 touch-none pointer-events-none select-none">
